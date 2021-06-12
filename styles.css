@@ -18,20 +18,23 @@ h1 {
 }
 
 /* Nav Styling */
-ul {
-    padding-left: 0;
+nav {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-li{
-    display: inline-block;
+ul{
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 0;
     list-style: none;
 }
-
-li:first-child {
-    display: block;
-    padding-bottom: 1rem;
+a {
+    color:#212121;
+    text-decoration: none;
+    width: 100%;
 }
-
 
 /* Header Styling */
 .name {
@@ -42,7 +45,40 @@ li:first-child {
     margin: 0;
 }
 
-.greeting {
-    height: 70vh;
-    padding-top: 3rem;
+header {
+    height: 65vh;
+    padding-top: 4rem;
 }
+
+/* Responsive Styling at 768px and up */
+@media only screen and (min-width: 768px) {
+    .container{
+        padding: 1rem 3rem;
+    }
+    /* Nav Styling */
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    ul{
+        display:flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        width: 100%;
+        list-style: none;
+    }
+    li {
+        margin-left: 2rem;
+    }
+    /* Header Styling */
+    header {
+        margin-top: 4rem;
+        height: 55vh;
+    }
+}
+
+/* Responsive Styling at 1000px and up */
+@media only screen and (min-width: 1000px) {
+    .container{
+        padding: 1rem 4rem;
+    }
