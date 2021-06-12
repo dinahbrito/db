@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:wght@400;600&display=swap');
+
+body {
+    font-family: "IBM Plex Mono";
+    color: #212121;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 1rem 2rem;
+}
+
+/* Nav Styling */
+ul {
+    padding-left: 0;
+}
+
+li{
+    display: inline-block;
+    list-style: none;
+}
+
+li:first-child {
+    display: block;
+    padding-bottom: 1rem;
+}
+
+
+/* Header Styling */
+.name {
+    color: #D81B60;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+.greeting {
+    height: 70vh;
+    padding-top: 3rem;
+}
