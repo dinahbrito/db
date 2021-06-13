@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap');
 
-body {
-    font-family: "IBM Plex Mono";
-    color: #212121;
+:root {
+    --pink: #D81B60;
+    --notblack: #212121;
 }
 
+body {
+    font-family: "IBM Plex Mono", monospace;
+    color: var(--notblack);
+}
 h1 {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
     font-size: 4rem;
     font-weight: 600;
     padding: 0;
     margin: 0;
 }
-
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
 .container {
     padding: 1rem 2rem;
 }
@@ -38,17 +46,33 @@ a {
 
 /* Header Styling */
 .name {
-    color: #D81B60;
+    color: var(--pink);
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 700;
     padding: 0;
     margin: 0;
 }
-
 header {
     height: 65vh;
     padding-top: 4rem;
 }
+
+/* Project Card Styling */
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1em;
+}
+.card {
+    height: 400px;
+    background-color: pink;
+    border-radius: 50px;
+}
+
+/* Footer Styling*/
+    footer, p {
+        font-size: 12px;
+    }
 
 /* Responsive Styling at 768px and up */
 @media only screen and (min-width: 768px) {
@@ -75,10 +99,17 @@ header {
         margin-top: 4rem;
         height: 55vh;
     }
+    /* Card Styling */
+    .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2em;
+        }
 }
 
 /* Responsive Styling at 1000px and up */
 @media only screen and (min-width: 1000px) {
     .container{
-        padding: 1rem 4rem;
+        padding: 1rem 5rem;
     }
+}
