@@ -4,6 +4,7 @@
     --pink: #D81B60;
     --black: #212121;
     --white: #ffffff;
+    --grey: #e0e0e0;
 }
 
 body {
@@ -45,6 +46,7 @@ ul{
     padding: 0;
     margin: 0;
     text-transform: lowercase;
+    align-items: center;
 }
 nav a {
     color:#212121;
@@ -56,7 +58,15 @@ ul a:hover {
     border-bottom: 4px solid var(--pink);
     padding-bottom: 5px;
 }
-
+#icon {
+    background-color: var(--grey);
+    border-radius: 50%;
+    padding: 10px;
+    width: 1rem;
+}
+.logo {
+   padding-top: 1rem;
+}
 
 /* Header Styling */
 .name {
