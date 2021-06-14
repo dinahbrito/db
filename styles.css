@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&family=Playfair+Display:wght@400;600&display=swap');
 
 :root {
-    --pink: #D81B60;
-    --black: #212121;
-    --white: #ffffff;
+    --accent: #D81B60;
+    --foreground: #363636;
+    --background: #ffffff;
+    --grey: #e0e0e0;
+}
+
+.darktheme {
+    --accent: #BB86FC;
+    --foreground: #ffffff;
+    --background: #363636;
     --grey: #e0e0e0;
 }
 
 body {
     font-family: "IBM Plex Mono", monospace;
-    color: var(--black);
+    color: var(--foreground);
+    background-color: var(--background);
 }
 h1 {
     font-family: "Playfair Display", serif;
@@ -49,14 +57,18 @@ ul{
     align-items: center;
 }
 nav a {
-    color:#212121;
+    color: var(--foreground);
     text-decoration: none;
     width: 100%;
     margin-bottom: 1rem;
 }
 ul a:hover {
-    border-bottom: 4px solid var(--pink);
+    border-bottom: 4px solid var(--accent);
     padding-bottom: 5px;
+}
+.darkmode {
+    border: none;
+    background-color: transparent;
 }
 #icon {
     background-color: var(--grey);
@@ -70,7 +82,7 @@ ul a:hover {
 
 /* Header Styling */
 .name {
-    color: var(--pink);
+    color: var(--accent);
     font-size: 1rem;
     font-weight: 700;
     padding: 0;
@@ -90,7 +102,7 @@ header {
 .card {
     background-color: pink;
     height: 400px;
-    color: var(--white);
+    color: var(--background);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     display: flex;
@@ -110,14 +122,14 @@ header {
     text-transform: lowercase;
 }
 .cardlinks a {
-    color: var(--white);
+    color: var(--background);
     text-decoration: none;
     font-weight: 400;
     border-bottom: 4px solid transparent;
     padding-bottom: 5px;
 }
 .cardlinks a:hover {
-    border-bottom: 4px solid var(--white);
+    border-bottom: 4px solid var(--background);
     padding-bottom: 5px;
 }
 
@@ -135,7 +147,7 @@ header {
            font-size: 4rem;
        }
    } 
-   
+
 /* Responsive Styling at 768px and up */
 @media only screen and (min-width: 768px) {
     .container{
