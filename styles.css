@@ -13,7 +13,7 @@ body {
 }
 h1 {
     font-family: "Playfair Display", serif;
-    font-size: 4rem;
+    font-size: 20vmin;
     font-weight: 600;
     padding: 0;
     margin: 0;
@@ -126,12 +126,23 @@ header {
         font-size: 12px;
     }
 
-
-    
+/* Responsive styling at 300px and up */
+   @media only screen and (min-width: 300px) {
+       header {
+           height: 55vh;
+       }
+       h1 {
+           font-size: 4rem;
+       }
+   } 
+   
 /* Responsive Styling at 768px and up */
 @media only screen and (min-width: 768px) {
     .container{
         padding: 1rem 3rem;
+    }
+    h1 {
+        font-size: 10vmin;
     }
     /* Nav Styling */
     nav {
