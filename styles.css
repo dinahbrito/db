@@ -99,10 +99,9 @@ header {
     grid-template-columns: 1fr;
     row-gap: 1em;
 }
-.card {
-    background-color: pink;
+.card {   
     height: 400px;
-    color: var(--background);
+    color: var(--foreground);
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     display: flex;
@@ -118,11 +117,10 @@ header {
     justify-content: space-evenly;
     padding-bottom: 1em;
     padding-top: 1rem;
-    background-color: grey;
     text-transform: lowercase;
 }
 .cardlinks a {
-    color: var(--background);
+    color: var(--foreground);
     text-decoration: none;
     font-weight: 400;
     border-bottom: 4px solid transparent;
