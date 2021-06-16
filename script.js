@@ -1,4 +1,4 @@
-var icon = document.getElementById("icon");
+const icon = document.getElementById("icon");
 
 icon.onclick = function ()
 {

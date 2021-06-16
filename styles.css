@@ -8,10 +8,10 @@
 }
 
 .darktheme {
-    --accent: #BB86FC;
+    --accent: #FF8A80;
     --foreground: #ffffff;
     --background: #363636;
-    --grey: #e0e0e0;
+    --grey: #212121;
 }
 
 body {
@@ -63,7 +63,11 @@ nav a {
     margin-bottom: 1rem;
 }
 ul a:hover {
-    border-bottom: 4px solid var(--accent);
+    border-bottom: 5px solid var(--grey);
+    padding-bottom: 5px;
+}
+.current, .current:hover {
+    border-bottom: 5px solid var(--accent);
     padding-bottom: 5px;
 }
 .darkmode {
