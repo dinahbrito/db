@@ -137,6 +137,9 @@ header {
     border-bottom: 4px solid var(--background);
     padding-bottom: 5px;
 }
+.cardlinks i:hover {
+    color: var(--accent);
+}
 
 /* Footer Styling*/
     footer {
