@@ -31,6 +31,7 @@ h2 {
     font-family: "Playfair Display", serif;
     font-weight: 600;
     font-size: 2rem;
+    padding-bottom: 1rem;
 }
 h3 {
     font-family: "Playfair Display", serif;
@@ -94,7 +95,7 @@ ul a:hover {
     margin: 0;
 }
 header {
-    height: 45vh;
+    height: 40vh;
     padding-top: 4rem;
 }
 
