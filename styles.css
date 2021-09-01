@@ -190,12 +190,12 @@ header {
 }
 
 /* Responsive Styling at 1000px and up */
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     .container{
         padding: 1rem 5rem;
     }
     .projects {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 2em;
         }
 }
