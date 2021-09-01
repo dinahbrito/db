@@ -63,7 +63,7 @@ nav a {
     margin-bottom: 1rem;
 }
 ul a:hover {
-    border-bottom: 5px solid var(--grey);
+    border-bottom: 5px solid var(--accent);
     padding-bottom: 5px;
 }
 .current, .current:hover {
@@ -118,10 +118,13 @@ header {
 .cardlinks {
     margin-top: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-bottom: 1em;
     padding-top: 1rem;
     text-transform: lowercase;
+    font-size: 1.5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .cardlinks a {
     color: var(--foreground);
