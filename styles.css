@@ -24,8 +24,8 @@ body {
 }
 h1 {
     font-family: "Playfair Display", serif;
-    font-size: 20vmin;
     font-weight: 600;
+    font-size: 15vmin;
 }
 h2 {
     font-family: "Playfair Display", serif;
@@ -87,18 +87,19 @@ ul a:hover {
 }
 
 /* Header Styling */
-.name {
-    color: var(--accent);
-    font-size: 1rem;
-    font-weight: 700;
-    padding: 0;
-    margin: 0;
-}
+
 header {
-    height: 40vh;
+    height: 60vh;
     padding-top: 4rem;
 }
-
+.greeting-links i{
+    font-size: 30px;
+    color: var(--accent);
+    margin-top: 1rem;
+}
+.greeting-links i:hover {
+     color: var(--foreground);
+ }
 /* Project Card Styling */
 .projects {
     display: grid;
@@ -150,16 +151,6 @@ header {
     footer {
         font-size: 12px;
     }
-
-/* Responsive styling at 300px and up */
-   @media only screen and (min-width: 300px) {
-       header {
-           height: 55vh;
-       }
-       h1 {
-           font-size: 4rem;
-       }
-   } 
 
 /* Responsive Styling at 768px and up */
 @media only screen and (min-width: 768px) {
