@@ -94,12 +94,12 @@ header {
 }
 .greeting-links i{
     font-size: 30px;
-    color: var(--accent);
+    color: var(--foreground);
     margin-top: 1rem;
     margin-right: 10px;
 }
 .greeting-links i:hover {
-     color: var(--foreground);
+     color: var(--accent);
  }
 /* Project Card Styling */
 .projects {
