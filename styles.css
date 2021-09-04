@@ -156,7 +156,7 @@ header {
     padding-bottom: 1em;
     padding-top: 1rem;
     text-transform: lowercase;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: 3rem;
     margin-right: 3rem;
 }
@@ -167,11 +167,8 @@ header {
     border-bottom: 4px solid transparent;
     padding-bottom: 5px;
 }
-.cardlinks a:hover {
-    border-bottom: 4px solid var(--background);
-    padding-bottom: 5px;
-}
-.cardlinks i:hover {
+
+.cardlinks i:hover, .cardlinks a:hover {
     color: var(--accent);
 }
 
