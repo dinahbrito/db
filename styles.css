@@ -64,13 +64,32 @@ nav a {
     width: 100%;
     margin-bottom: 1rem;
 }
-ul a:hover {
+/* ul a:hover {
     border-bottom: 5px solid var(--accent);
     padding-bottom: 5px;
 }
 .current, .current:hover {
     border-bottom: 5px solid var(--accent);
     padding-bottom: 5px;
+} */
+a.left {
+    position: relative;
+}
+a.left:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent);
+    opacity: .70;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+a.left:hover:before {
+    visibility: visible;
+    width: 100%;
 }
 .darkmode {
     border: none;
