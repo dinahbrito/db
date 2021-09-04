@@ -1,14 +1,11 @@
 :root {
     --accent: rgba(255,0,255, .5);
-    --accentSolid: rgba(216, 27, 96, 1);
     --foreground: #363636;
     --background: #ffffff;
     --grey: #e0e0e0;
 }
 
 .darktheme {
-    --accent: rgba(255, 138, 128, .5);
-    --accentSolid: rgb(255, 138, 128);
     --foreground: #ffffff;
     --background: #363636;
     --grey: #212121;
@@ -125,11 +122,11 @@ header {
  .highlight {
       background: linear-gradient(180deg,rgba(255,255,255,0) 60%, var(--accent) 40%);
  }
- .blue {
+ .blue, a.l-blue:before {
     background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(0,255,255, .5) 40%);
  }
- .yellow {
-    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(255,255,0, .7) 40%);
+ .yellow, a.l-yellow:before{
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(255,255,0, .6) 40%);
  }
 /* Project Card Styling */
 .projects {
@@ -175,7 +172,7 @@ header {
     padding-bottom: 5px;
 }
 .cardlinks i:hover {
-    color: var(--accentSolid);
+    color: var(--accent);
 }
 
 /* Footer Styling*/
