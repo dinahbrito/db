@@ -1,12 +1,14 @@
 :root {
-    --accent: #D81B60;
+    --accent: rgba(216, 27, 96, .5);
+    --accentSolid: rgba(216, 27, 96, 1);
     --foreground: #363636;
     --background: #ffffff;
     --grey: #e0e0e0;
 }
 
 .darktheme {
-    --accent: #FF8A80;
+    --accent: rgba(255, 138, 128, .5);
+    --accentSolid: rgb(255, 138, 128);
     --foreground: #ffffff;
     --background: #363636;
     --grey: #212121;
@@ -28,11 +30,11 @@ h1 {
 }
 h2 {
     font-weight: 500;
-    font-size: 2rem;
-    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
 }
 h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 .container {
@@ -79,8 +81,7 @@ a.left:before {
     height: 20px;
     bottom: 0;
     left: 0;
-    background-color: var(--accent);
-    opacity: .70;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, var(--accent) 40%);
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -108,6 +109,10 @@ header {
     height: 60vh;
     padding-top: 4rem;
 }
+.greeting p {
+    font-size: 20px;
+    line-height: 1.5;
+}
 .greeting-links i{
     font-size: 30px;
     color: var(--foreground);
@@ -116,6 +121,9 @@ header {
 }
 .greeting-links i:hover {
      color: var(--accent);
+ }
+ .highlight {
+      background: linear-gradient(180deg,rgba(255,255,255,0) 60%, var(--accent) 40%);
  }
 /* Project Card Styling */
 .projects {
@@ -161,22 +169,25 @@ header {
     padding-bottom: 5px;
 }
 .cardlinks i:hover {
-    color: var(--accent);
+    color: var(--accentSolid);
 }
 
 /* Footer Styling*/
     footer {
         font-size: 12px;
     }
+@media only screen and (min-width: 700px) {
+    h1 {
+        font-size: 10vmin;
+    }
+}
 
 /* Responsive Styling at 768px and up */
 @media only screen and (min-width: 768px) {
     .container{
         padding: 1rem 3rem;
     }
-    h1 {
-        font-size: 10vmin;
-    }
+   
     /* Nav Styling */
     nav {
         display: flex;
@@ -197,6 +208,10 @@ header {
         margin-top: 4rem;
         height: 50vh;
     }
+    .greeting p {
+        width: 95%;
+        font-size: 24px;
+    }
     /* Card Styling */
     .projects {
         display: grid;
@@ -214,4 +229,7 @@ header {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         column-gap: 3rem;
         }
+    .greeting p {
+        width: 65%;
+    }
 }
