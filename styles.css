@@ -1,5 +1,5 @@
 :root {
-    --accent: rgba(216, 27, 96, .5);
+    --accent: rgba(255,0,255, .5);
     --accentSolid: rgba(216, 27, 96, 1);
     --foreground: #363636;
     --background: #ffffff;
@@ -124,6 +124,12 @@ header {
  }
  .highlight {
       background: linear-gradient(180deg,rgba(255,255,255,0) 60%, var(--accent) 40%);
+ }
+ .blue {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(0,255,255, .5) 40%);
+ }
+ .yellow {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgba(255,255,0, .7) 40%);
  }
 /* Project Card Styling */
 .projects {
