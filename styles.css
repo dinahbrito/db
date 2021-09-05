@@ -8,7 +8,6 @@
 .darktheme {
     --foreground: #ffffff;
     --background: #363636;
-    --grey: #212121;
 }
 * {
     margin: 0;
@@ -86,15 +85,24 @@ a.left:hover:before {
     visibility: visible;
     width: 100%;
 }
+/* Styling for Dark/Light Mode Toggle */
 .darkmode {
     border: none;
     background-color: transparent;
 }
 #icon {
-    background-color: var(--grey);
     border-radius: 50%;
+    border: 1px solid var(--grey);
     padding: 10px;
     width: 1rem;
+}
+i#icon {
+    color: var(--foreground);
+}
+i#icon:hover {
+    color: var(--background);
+    background-color: var(--foreground);
+    border: 1px solid var(--background);
 }
 .logo {
    padding-top: 1rem;

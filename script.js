@@ -4,8 +4,11 @@ icon.onclick = function ()
 {
     document.body.classList.toggle("darktheme");
     if (document.body.classList.contains("darktheme")) {
-        icon.src = "images/sun.png";
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
     } else {
-        icon.src = "images/moon.png";
+        icon.classList.remove('fa-sun');
+        icon.classList.add('fa-moon');
     }
 }
+
