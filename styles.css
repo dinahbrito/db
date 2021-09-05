@@ -59,14 +59,7 @@ nav a {
     width: 100%;
     margin-bottom: 1rem;
 }
-/* ul a:hover {
-    border-bottom: 5px solid var(--accent);
-    padding-bottom: 5px;
-}
-.current, .current:hover {
-    border-bottom: 5px solid var(--accent);
-    padding-bottom: 5px;
-} */
+
 a.left {
     position: relative;
 }
@@ -179,6 +172,7 @@ header {
 /* Footer Styling*/
     footer {
         font-size: 12px;
+        margin-top: 2rem;
     }
 @media only screen and (min-width: 700px) {
     h1 {
@@ -242,9 +236,16 @@ header {
 @media (hover: hover) {
     .summary {
         display: none;
+        transition: all .2s ease-in-out;
     }
     .card:hover >.summary {
         display: block;
+    }
+    .card {
+        transition: all .2s ease-in-out;
+    }
+    .card:hover {
+        transform: scale(1.1);
     }
 
 }
