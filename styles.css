@@ -107,11 +107,12 @@ i#icon:hover {
 .logo {
    padding-top: 1rem;
 }
-button:focus {
+button:focus{
     outline: none;
     box-shadow: 0 0 0 5px rgba(255,0,255, .5);
     border-radius: 50%;
   }
+
 /* Header Styling */
 
 header {
