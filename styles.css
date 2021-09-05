@@ -241,7 +241,5 @@ header {
     .card:hover >.summary {
         display: block;
     }
-    .card:hover {
-        background-color: rgba(153, 153, 153,.5);
-    }
+
 }
