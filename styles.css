@@ -102,12 +102,16 @@ i#icon {
 i#icon:hover {
     color: var(--background);
     background-color: var(--foreground);
-    border: 1px solid var(--background);
+    border: 1px solid var(--foreground);
 }
 .logo {
    padding-top: 1rem;
 }
-
+button:focus {
+    outline: none;
+    box-shadow: 0 0 0 5px rgba(255,0,255, .5);
+    border-radius: 50%;
+  }
 /* Header Styling */
 
 header {
