@@ -118,15 +118,6 @@ header {
     font-size: 20px;
     line-height: 1.5;
 }
-.greeting-links i{
-    font-size: 30px;
-    color: var(--foreground);
-    margin-top: 1rem;
-    margin-right: 10px;
-}
-.greeting-links i:hover {
-     color: var(--accent);
- }
  .highlight {
       background: linear-gradient(180deg,rgba(255,255,255,0) 60%, var(--accent) 40%);
  }
@@ -239,5 +230,15 @@ header {
         }
     .greeting p {
         width: 65%;
+    }
+   
+}
+/* If mouse is available summary will be hidden and display on hover */
+@media (hover: hover) {
+    .summary {
+        display: none;
+    }
+    .card:hover >.summary {
+        display: block;
     }
 }
