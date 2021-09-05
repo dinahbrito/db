@@ -11,4 +11,3 @@ icon.onclick = function ()
         icon.classList.add('fa-moon');
     }
 }
-

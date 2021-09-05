@@ -56,7 +56,7 @@ ul{
 nav a {
     color: var(--foreground);
     text-decoration: none;
-    width: 100%;
+    width: 100%; 
     margin-bottom: 1rem;
 }
 
@@ -99,6 +99,7 @@ i#icon:hover {
 }
 .logo {
    padding-top: 1rem;
+   font-weight: 700;
 }
 /* button:focus{
     outline: none;
@@ -109,7 +110,7 @@ i#icon:hover {
 /* Header Styling */
 
 header {
-    height: 60vh;
+    height: 65vh;
     padding-top: 4rem;
 }
 .greeting p {
@@ -142,7 +143,7 @@ a.l-yellow:before{
 .projects {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 1em;
+    row-gap: 1.5em;
 }
 .card {   
     height: 300px;
@@ -235,6 +236,9 @@ a.l-yellow:before{
 @media only screen and (min-width: 1200px) {
     .container{
         padding: 1rem 5.25rem;
+    }
+    header {
+        height: 60vh;
     }
     .projects {
         grid-template-columns: 1fr 1fr 1fr 1fr;
