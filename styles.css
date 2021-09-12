@@ -205,7 +205,7 @@ a.l-yellow:before{
     background-size: cover;
 }
 .project2 {
-    background: radial-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg'); /* darkens image */
+    background: radial-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url('images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg'); /* darkens image */
     background-position:center top;
     background-repeat: no-repeat;
     background-size: cover;
