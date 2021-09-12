@@ -199,6 +199,11 @@ a.l-yellow:before{
 .cardlinks i:hover, .cardlinks a:hover {
     color: var(--accent);
 }
+.project1 {
+    background-image: url(/images/john-towner-89PFnHKg8HE-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* Footer Styling*/
     footer {
