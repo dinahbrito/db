@@ -164,7 +164,7 @@ a.l-yellow:before{
 }
 .card {   
     height: 300px;
-    color: var(--foreground);
+    color: white;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     display: flex;
@@ -203,9 +203,19 @@ a.l-yellow:before{
     background-image: url(/images/john-towner-89PFnHKg8HE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
 }
-
+.project2 {
+    background: radial-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('images/national-cancer-institute-L8tWZT4CcVQ-unsplash.jpg'); /* darkens image */
+    background-position:center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+.project3 {
+    color:black;
+}
+.project4 {
+    color:black;
+}
 /* Footer Styling*/
     footer {
         font-size: 12px;
