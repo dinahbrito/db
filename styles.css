@@ -197,7 +197,7 @@ a.l-yellow:before{
 }
 
 .cardlinks i:hover, .cardlinks a:hover {
-    color: var(--accent);
+    color: rgba(0,255,255,1);
 }
 .project1 {
     background-image: url(/images/john-towner-89PFnHKg8HE-unsplash.jpg);
