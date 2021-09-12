@@ -154,13 +154,13 @@ a.l-yellow:before{
  .yellow{
     box-shadow: inset 0 -10px 0 rgba(255,255,0,.7);
  }
-
 /* Project Card Styling */
 .projects {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 1.5em;
     z-index: 999;
+    margin-bottom: 17rem;
 }
 .card {   
     height: 300px;
@@ -215,6 +215,10 @@ a.l-yellow:before{
 }
 .project4 {
     color:black;
+}
+/* Contact Section */
+.contact {
+    margin-bottom: 3rem;
 }
 /* Footer Styling*/
     footer {
