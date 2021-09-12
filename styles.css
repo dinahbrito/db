@@ -189,7 +189,7 @@ a.l-yellow:before{
     margin-right: 1.5rem;
 }
 .cardlinks a {
-    color: var(--foreground);
+    color: #ffffff;
     text-decoration: none;
     font-weight: 400;
     border-bottom: 4px solid transparent;
@@ -203,6 +203,7 @@ a.l-yellow:before{
     background-image: url(/images/john-towner-89PFnHKg8HE-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    color: white;
 }
 
 /* Footer Styling*/
@@ -282,8 +283,15 @@ a.l-yellow:before{
     .card {
         transition: all .2s ease-in-out;
     }
+    /* This "grows" card on hover */
     .card:hover {
         transform: scale(1.1);
+        /* background-color: var(--accent);
+        background-image: linear-gradient(
+        to bottom, transparent, white
+        ), url("Images/background.jpg");
+        background-repeat: no-repeat;
+        color: var(--foreground); */
     }
 
 }
