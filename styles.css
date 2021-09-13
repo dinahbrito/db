@@ -224,6 +224,25 @@ a.l-yellow:before{
 .contact {
     margin-bottom: 3rem;
 }
+form {
+    display: grid;
+}
+.visitor-info input {
+    width: 90%;
+}
+input, textarea{
+    font-size: 1rem;
+    border:0; 
+    border-bottom:1px solid #eee; 
+    padding:10px;
+    margin:10px 0;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid var(--accent);
+}
+
 /* Footer Styling*/
     footer {
         font-size: 12px;
@@ -271,6 +290,12 @@ a.l-yellow:before{
         grid-template-columns: 1fr 1fr;
         column-gap: 4em;
         }
+    /* Contact Form */
+    .visitor-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+    }
 }
 
 /* Responsive Styling at 1000px and up */
@@ -287,6 +312,9 @@ a.l-yellow:before{
         }
     .greeting p {
         width: 65%;
+    }
+    .visitor-info {
+        width: 100%;
     }
    
 }
