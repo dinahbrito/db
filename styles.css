@@ -296,6 +296,10 @@ input:focus, textarea:focus{
         grid-template-columns: 1fr 1fr;
         grid-gap: 3rem;
     }
+    input.send {
+        height: 50px;
+        width: 90px;
+    }
 }
 
 /* Responsive Styling at 1000px and up */
