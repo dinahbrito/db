@@ -233,14 +233,18 @@ form {
 input, textarea{
     font-size: 1rem;
     border:0; 
-    border-bottom:1px solid #eee; 
+    border-bottom:2px solid #eee; 
     padding:10px;
     margin:10px 0;
+    color: var(--foreground);
 }
-input:focus, textarea:focus{
+.text-box:focus, textarea:focus{
     outline: none;
     border: 0;
     border-bottom: 2px solid var(--accent);
+}
+textarea {
+    margin-bottom: 2rem;
 }
 
 /* Footer Styling*/
@@ -296,7 +300,13 @@ input:focus, textarea:focus{
         grid-template-columns: 1fr 1fr;
         grid-gap: 3rem;
     }
-    input.send {
+    .text-box {
+        background-color: transparent;
+    }
+    ::placeholder {
+        color: var(--foreground);
+    }
+   .send {
         height: 50px;
         width: 90px;
     }
