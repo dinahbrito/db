@@ -261,6 +261,10 @@ textarea {
     background-color: rgba(0,255,255,1);
     color: black;
 }
+.send:focus {
+    outline: none;
+    border: 3px solid rgba(255,0,255, 1);
+}
 
 /* Footer Styling*/
     footer {
