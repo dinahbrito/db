@@ -2,12 +2,13 @@
     --accent: rgba(255,0,255, .5);
     --foreground: #363636;
     --background: #ffffff;
-    --grey: #e0e0e0;
+    --grey: #585858;
 }
 
 .darktheme {
     --foreground: #ffffff;
     --background: #363636;
+    --grey: gray;
 }
 * {
     margin: 0;
@@ -220,7 +221,7 @@ a.l-yellow:before{
 .project4 {
     color:black;
 }
-/* Contact Section */
+/* Contact Form Section */
 .contact {
     margin-bottom: 3rem;
 }
@@ -230,7 +231,7 @@ form {
 .visitor-info input {
     width: 90%;
 }
-input, textarea{
+.text-box, textarea{
     font-size: 1rem;
     border:0; 
     border-bottom:2px solid #eee; 
@@ -245,6 +246,20 @@ input, textarea{
 }
 textarea {
     margin-bottom: 2rem;
+}
+.send {
+    background-color: var(--grey);
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    border: 0;
+    margin: 2rem 0;
+    transition: all .3s ease-in-out;
+}
+.send:hover {
+    background-color: rgba(0,255,255,1);
+    color: black;
 }
 
 /* Footer Styling*/
