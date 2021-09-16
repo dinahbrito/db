@@ -231,8 +231,10 @@ form {
 .visitor-info input {
     width: 90%;
 }
-input, textarea, .text-box{
+.visitor-info {
     -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 .text-box, textarea{
     font-size: 1rem;
@@ -241,6 +243,9 @@ input, textarea, .text-box{
     padding:10px;
     margin:10px 0;
     color: var(--foreground);
+}
+input[type="text"], input[type="email"], textarea {
+    background-color: var(--background);
 }
 .text-box:focus, textarea:focus{
     outline: none;
@@ -323,9 +328,6 @@ textarea {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 3rem;
-    }
-    .text-box {
-        background-color: transparent;
     }
     ::placeholder {
         color: var(--foreground);
