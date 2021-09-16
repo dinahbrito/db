@@ -230,6 +230,8 @@ form {
 }
 .visitor-info input {
     width: 90%;
+}
+.visitor-info {
     -webkit-appearance: none;
 }
 .text-box, textarea{
