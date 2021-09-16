@@ -231,7 +231,7 @@ form {
 .visitor-info input {
     width: 90%;
 }
-input, textarea{
+input, textarea, .text-box{
     -webkit-appearance: none;
 }
 .text-box, textarea{
