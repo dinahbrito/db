@@ -116,11 +116,11 @@ i#icon:hover {
    padding-top: 1rem;
    font-weight: 700;
 }
-/* button:focus{
+button:focus{
     outline: none;
-    box-shadow: 0 0 0 5px rgba(255,0,255, .5);
+    box-shadow: 0 0 0 3px rgba(255,0,255, .5);
     border-radius: 50%;
-  } */
+  }
 
 /* Header Styling */
 
@@ -256,6 +256,8 @@ textarea {
     border: 0;
     margin: 2rem 0;
     transition: all .3s ease-in-out;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 .send:hover {
     background-color: rgba(0,255,255,1);
