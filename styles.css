@@ -232,7 +232,7 @@ form {
     width: 90%;
 }
 .visitor-info {
-    -webkit-appearance: none;
+    -webkit-appearance: none !important;
     -moz-appearance: none;
     appearance: none;
 }
