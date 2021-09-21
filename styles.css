@@ -280,6 +280,17 @@ textarea {
     footer {
         font-size: 12px;
         margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .fab {
+        font-size: 25px;
+        color: var(--foreground);
+        padding: 5px;
+        vertical-align: middle;
+    }
+    footer .fab:hover {
+        color: var(--accent);
     }
 @media only screen and (min-width: 700px) {
     h1 {
