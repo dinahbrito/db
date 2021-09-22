@@ -216,7 +216,10 @@ a.l-yellow:before{
     background-size: cover;
 }   
 .project3 {
-    color:black;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2) ), url('images/sillyface.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .project4 {
     color:black;
