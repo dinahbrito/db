@@ -165,7 +165,7 @@ a.l-yellow:before{
     grid-template-columns: 1fr;
     row-gap: 1.5em;
     z-index: 999;
-    margin-bottom: 17rem;
+    margin-bottom: 14rem;
 }
 .card {   
     height: 300px;
@@ -222,7 +222,10 @@ a.l-yellow:before{
     background-size: cover;
 }
 .project4 {
-    color:black;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url('images/philippines.jpg');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* Contact Form Section */
 .contact {
