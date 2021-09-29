@@ -259,6 +259,8 @@ input[type="text"], input[type="email"], textarea {
 }
 textarea {
     margin-bottom: 2rem;
+    -webkit-appearance: none;
+    font-family: "Rubik", Helvetica, sans-serif;
 }
 .send {
     background-color: var(--grey);
